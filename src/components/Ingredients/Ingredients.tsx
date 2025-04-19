@@ -55,7 +55,7 @@ const Ingredients = () => {
         onChange={setBunAmount}
       />
 
-      <TableView aria-label="Tabelle der Zutaten">
+      <TableView aria-label="Tabelle der Zutaten" maxWidth="size-6000">
         <TableHeader>
           <Column>Zutat</Column>
           <Column>Menge</Column>
@@ -63,23 +63,23 @@ const Ingredients = () => {
         <TableBody>
           <Row>
             <Cell>{ingredients.flour.name}</Cell>
-            <Cell>{ingredients.flour.amount}</Cell>
+            <Cell>{ingredients.flour.amount} g</Cell>
           </Row>
           <Row>
             <Cell>{ingredients.yeast.name}</Cell>
-            <Cell>{ingredients.yeast.amount}</Cell>
+            <Cell>{ingredients.yeast.amount} g</Cell>
           </Row>
           <Row>
             <Cell>{ingredients.sugar.name}</Cell>
-            <Cell>{ingredients.sugar.amount}</Cell>
+            <Cell>{ingredients.sugar.amount} g</Cell>
           </Row>
           <Row>
             <Cell>{ingredients.salt.name}</Cell>
-            <Cell>{ingredients.salt.amount}</Cell>
+            <Cell>{ingredients.salt.amount} g</Cell>
           </Row>
           <Row>
             <Cell>{ingredients.water.name}</Cell>
-            <Cell>{ingredients.water.amount}</Cell>
+            <Cell>{ingredients.water.amount} ml</Cell>
           </Row>
         </TableBody>
       </TableView>

@@ -3,6 +3,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
@@ -21,6 +22,9 @@ body {
   line-height: 1.5;
   /* 5. Improve text rendering */
   -webkit-font-smoothing: antialiased;
+
+  background-color: #f8f8f8;
+  margin: 10px 20px;
 }
 
 /* 6. Improve media defaults */

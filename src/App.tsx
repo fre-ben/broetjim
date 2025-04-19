@@ -1,6 +1,7 @@
 import { defaultTheme, Provider } from "@adobe/react-spectrum";
 import "./App.css";
 import Ingredients from "./components/Ingredients/Ingredients";
+import Recipe from "./components/Recipe/Recipe";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <h1>Broetjim</h1>
 
       <Ingredients />
+      <Recipe />
     </Provider>
   );
 }
