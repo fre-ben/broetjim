@@ -10,7 +10,7 @@ const BASE_INGREDIENTS: Ingredients = {
 };
 
 const Ingredients = () => {
-  const [bunAmount, setBunAmount] = useState(8);
+  const [bunAmount, setBunAmount] = useState<number>(8);
   const [ingredients, setIngredients] = useState<Ingredients>(BASE_INGREDIENTS);
 
   useEffect(() => {
@@ -20,9 +20,10 @@ const Ingredients = () => {
           key,
           {
             ...value,
-            amount: Math.round(
-              (BASE_INGREDIENTS[key as keyof Ingredients].amount / 8) * amount
-            ),
+            amount:
+              Math.round(
+                (BASE_INGREDIENTS[key as keyof Ingredients].amount / 8) * amount
+              ) || 0,
           },
         ])
       ) as Ingredients;
@@ -86,34 +87,6 @@ const Ingredients = () => {
           </tbody>
         </table>
       </div>
-      {/* <TableView aria-label="Tabelle der Zutaten" maxWidth="size-6000">
-        <TableHeader>
-          <Column>Zutat</Column>
-          <Column>Menge</Column>
-        </TableHeader>
-        <TableBody>
-          <Row>
-            <Cell>{ingredients.flour.name}</Cell>
-            <Cell>{ingredients.flour.amount} g</Cell>
-          </Row>
-          <Row>
-            <Cell>{ingredients.yeast.name}</Cell>
-            <Cell>{ingredients.yeast.amount} g</Cell>
-          </Row>
-          <Row>
-            <Cell>{ingredients.sugar.name}</Cell>
-            <Cell>{ingredients.sugar.amount} g</Cell>
-          </Row>
-          <Row>
-            <Cell>{ingredients.salt.name}</Cell>
-            <Cell>{ingredients.salt.amount} g</Cell>
-          </Row>
-          <Row>
-            <Cell>{ingredients.water.name}</Cell>
-            <Cell>{ingredients.water.amount} ml</Cell>
-          </Row>
-        </TableBody>
-      </TableView> */}
     </section>
   );
 };
