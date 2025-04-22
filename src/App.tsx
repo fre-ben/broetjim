@@ -1,16 +1,14 @@
-import { defaultTheme, Provider } from "@adobe/react-spectrum";
-import "./App.css";
 import Ingredients from "./components/Ingredients/Ingredients";
 import Recipe from "./components/Recipe/Recipe";
+import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 
 function App() {
   return (
-    <Provider theme={defaultTheme} colorScheme="light">
-      <h1>Broetjim</h1>
-
+    <main className="grid gap-4 m-4 justify-items-center">
+      <ThemeToggle />
       <Ingredients />
       <Recipe />
-    </Provider>
+    </main>
   );
 }
 

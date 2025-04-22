@@ -1,13 +1,3 @@
-import {
-  Cell,
-  Column,
-  NumberField,
-  Row,
-  TableBody,
-  TableHeader,
-  TableView,
-} from "@adobe/react-spectrum";
-import classes from "./Ingredients.module.scss";
 import type { Ingredients } from "./Ingredients.types";
 import { useEffect, useState } from "react";
 
@@ -45,17 +35,58 @@ const Ingredients = () => {
   }, [bunAmount]);
 
   return (
-    <section className={classes.wrapper}>
-      <NumberField
-        defaultValue={8}
-        minValue={1}
-        maxValue={100}
-        label="Anzahl Brötchen"
-        value={bunAmount}
-        onChange={setBunAmount}
-      />
+    <section className="grid gap-4 max-w-sm justify-self-center w-full">
+      <h1 className="font-bold text-3xl underline decoration-amber-700">
+        Broetjim
+      </h1>
 
-      <TableView aria-label="Tabelle der Zutaten" maxWidth="size-6000">
+      <label className="input w-full">
+        <span className="label">Anzahl Brötchen</span>
+        <input
+          type="number"
+          defaultValue={bunAmount}
+          min={1}
+          max={100}
+          value={bunAmount}
+          title="Anzahl Brötchen"
+          onChange={(event) => setBunAmount(event.target.valueAsNumber)}
+        />
+      </label>
+
+      <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
+        <table className="table table-zebra ">
+          <thead>
+            <tr>
+              <th>Zutat</th>
+              <th>Menge</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>{ingredients.flour.name}</td>
+              <td>{ingredients.flour.amount}</td>
+            </tr>
+            <tr>
+              <td>{ingredients.yeast.name}</td>
+              <td>{ingredients.yeast.amount}</td>
+            </tr>
+            <tr>
+              <td>{ingredients.sugar.name}</td>
+              <td>{ingredients.sugar.amount}</td>
+            </tr>
+            <tr>
+              <td>{ingredients.salt.name}</td>
+              <td>{ingredients.salt.amount}</td>
+            </tr>
+            <tr>
+              <td>{ingredients.water.name}</td>
+              <td>{ingredients.water.amount}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {/* <TableView aria-label="Tabelle der Zutaten" maxWidth="size-6000">
         <TableHeader>
           <Column>Zutat</Column>
           <Column>Menge</Column>
@@ -82,7 +113,7 @@ const Ingredients = () => {
             <Cell>{ingredients.water.amount} ml</Cell>
           </Row>
         </TableBody>
-      </TableView>
+      </TableView> */}
     </section>
   );
 };
