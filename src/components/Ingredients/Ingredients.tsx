@@ -41,7 +41,7 @@ const Ingredients = () => {
         Broetjim
       </h1>
 
-      <label className="input w-full">
+      <label className="input w-full shadow-md">
         <span className="label">Anzahl Brötchen</span>
         <input
           type="number"
@@ -54,8 +54,8 @@ const Ingredients = () => {
         />
       </label>
 
-      <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100">
-        <table className="table table-zebra ">
+      <div className="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 shadow-md">
+        <table className="table table-zebra">
           <thead>
             <tr>
               <th>Zutat</th>
