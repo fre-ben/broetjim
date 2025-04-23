@@ -1,6 +1,11 @@
 import type { Ingredients } from "./Ingredients.types";
 import { useEffect, useState } from "react";
 
+interface IngredientsProps {
+  bunAmount: number;
+  setBunAmount: React.Dispatch<React.SetStateAction<number>>;
+}
+
 const BASE_INGREDIENTS: Ingredients = {
   flour: { name: "Mehl", amount: 500 },
   yeast: { name: "Hefe", amount: 8 },
@@ -9,8 +14,10 @@ const BASE_INGREDIENTS: Ingredients = {
   water: { name: "Wasser", amount: 375 },
 };
 
-const Ingredients = () => {
-  const [bunAmount, setBunAmount] = useState<number>(8);
+const Ingredients: React.FC<IngredientsProps> = ({
+  bunAmount,
+  setBunAmount,
+}) => {
   const [ingredients, setIngredients] = useState<Ingredients>(BASE_INGREDIENTS);
 
   useEffect(() => {

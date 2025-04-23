@@ -1,4 +1,8 @@
-const Recipe = () => {
+interface RecipeProps {
+  bunAmount: number;
+}
+
+const Recipe: React.FC<RecipeProps> = ({ bunAmount }) => {
   return (
     <section className="max-w-2xl">
       <ul
@@ -18,6 +22,19 @@ const Recipe = () => {
           Den fertig gerührten Teig in eine geölte Schüssel umfüllen (auch die
           Deckelinnenseite der Schüssel sollte geölt sein) und über Nacht in den
           Kühlschrank stellen.
+        </li>
+
+        <li className="list-row bg-base-200">
+          Am nächsten Morgen den Teig aus der Schüssel auf eine bemehlte
+          Arbeitsfläche geben (nicht kneten!) und etwas Mehl über den Teig
+          stäuben.
+        </li>
+        <li className="list-row">
+          Den Teig mit einem Teigschaber in {bunAmount} Teile teilen. Ein
+          Backpapier vorbereiten. Die jeweils diagonal gegenüberliegenden Ecken
+          eines Teigstücks etwas langziehen und gekreuzt übereinander auf dem
+          Backpapier ablegen. Mit ein wenig Wasser bestreichen und nach Belieben
+          mit Körnern dekorieren.
         </li>
       </ul>
     </section>
