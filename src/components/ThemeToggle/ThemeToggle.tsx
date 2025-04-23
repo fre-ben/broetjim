@@ -10,15 +10,12 @@ const ThemeToggle = () => {
 
   return (
     <div className="w-sm flex justify-end">
-      <span className="sr-only" id="theme-toggle">
-        Light-/Darkmode umschalten
-      </span>
       <label className="toggle text-base-content">
         <input
           type="checkbox"
           role="switch"
           aria-checked={isdark}
-          aria-labelledby="theme-toggle"
+          aria-label="Light-/Darkmode umschalten"
           value="dark"
           className="theme-controller"
           checked={isdark}
