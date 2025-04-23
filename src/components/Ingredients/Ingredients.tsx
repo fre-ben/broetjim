@@ -45,7 +45,6 @@ const Ingredients = () => {
         <span className="label">Anzahl Brötchen</span>
         <input
           type="number"
-          defaultValue={bunAmount}
           min={1}
           max={100}
           value={bunAmount}
