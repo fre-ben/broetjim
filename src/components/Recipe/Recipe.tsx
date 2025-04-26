@@ -30,11 +30,22 @@ const Recipe: React.FC<RecipeProps> = ({ bunAmount }) => {
           stäuben.
         </li>
         <li className="list-row">
-          Den Teig mit einem Teigschaber in {bunAmount} Teile teilen. Ein
-          Backpapier vorbereiten. Die jeweils diagonal gegenüberliegenden Ecken
-          eines Teigstücks etwas langziehen und gekreuzt übereinander auf dem
-          Backpapier ablegen. Mit ein wenig Wasser bestreichen und nach Belieben
-          mit Körnern dekorieren.
+          Den Teig mit einem Teigschaber in {bunAmount} Teile teilen. Die
+          Teigteile gleichmäßig auf ein Backpapier ablegen.
+        </li>
+        <li className="list-row bg-base-200">
+          Jeweils diagonal gegenüberliegenden Ecken eines Teigstücks etwas
+          langziehen und übereinander kreuzen.
+        </li>
+        <li className="list-row">
+          Anschließend die Teigstücke mit ein wenig Wasser bestreichen und nach
+          Belieben mit Körnern dekorieren.
+        </li>
+        <li className="list-row bg-base-200">
+          Im auf 260°C vorgeheizten Backofen (Ober- und Unterhitze, mittlere
+          Schiene) die Brötchen gold knusprig backen lassen. <br />
+          <br />
+          Am besten gelingen die Brötchen mit einem Pizzastein. Guten Appetit!
         </li>
       </ul>
     </section>
