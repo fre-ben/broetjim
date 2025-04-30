@@ -23,7 +23,7 @@ const ThemeToggle = () => {
         />
 
         <svg
-          aria-label="sun"
+          aria-label="Sonne (Heller Modus)"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -47,7 +47,7 @@ const ThemeToggle = () => {
         </svg>
 
         <svg
-          aria-label="moon"
+          aria-label="Mond (Dunkler Modus)"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
