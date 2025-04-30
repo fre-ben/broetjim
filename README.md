@@ -1,5 +1,6 @@
 # Broetjim
 
+
 Webpage displaying a special recipe for tasty buns. Calculates the amount of ingredients automatically.
 
 Built for my father as a little "weekend" project, so he does not need to calculate the amount of every single ingredient by himself.
@@ -29,3 +30,8 @@ Build the application with:
 ```bash
 pnpm build
 ```
+
+### Preview
+<!-- ![Broetjim](https://github.com/user-attachments/assets/1cfd3be4-0f09-416a-8d12-e1cce484cdac) -->
+
+<img src="https://github.com/user-attachments/assets/1cfd3be4-0f09-416a-8d12-e1cce484cdac" alt="Screenshot of broetjim.de" width="auto" height="500"/>
