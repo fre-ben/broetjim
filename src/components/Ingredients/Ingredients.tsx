@@ -72,23 +72,23 @@ const Ingredients: React.FC<IngredientsProps> = ({
           <tbody>
             <tr>
               <td>{ingredients.flour.name}</td>
-              <td>{ingredients.flour.amount}</td>
+              <td>{ingredients.flour.amount} g</td>
             </tr>
             <tr>
               <td>{ingredients.yeast.name}</td>
-              <td>{ingredients.yeast.amount}</td>
+              <td>{ingredients.yeast.amount} g</td>
             </tr>
             <tr>
               <td>{ingredients.sugar.name}</td>
-              <td>{ingredients.sugar.amount}</td>
+              <td>{ingredients.sugar.amount} g</td>
             </tr>
             <tr>
               <td>{ingredients.salt.name}</td>
-              <td>{ingredients.salt.amount}</td>
+              <td>{ingredients.salt.amount} g</td>
             </tr>
             <tr>
               <td>{ingredients.water.name}</td>
-              <td>{ingredients.water.amount}</td>
+              <td>{ingredients.water.amount} ml</td>
             </tr>
           </tbody>
         </table>
