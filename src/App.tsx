@@ -8,7 +8,7 @@ function App() {
   const [bunAmount, setBunAmount] = useState<number>(8);
 
   return (
-    <main className="grid gap-4 m-4 justify-items-center">
+    <main className="grid gap-4 p-4 justify-items-center">
       <ThemeToggle />
       <Ingredients bunAmount={bunAmount} setBunAmount={setBunAmount} />
       <Separator />

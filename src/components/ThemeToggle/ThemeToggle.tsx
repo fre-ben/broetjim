@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   }, [isdark]);
 
   return (
-    <div className="w-sm flex justify-end">
+    <div className="w-[100%] sm:w-sm flex justify-end">
       <label className="toggle text-base-content">
         <input
           type="checkbox"
