@@ -4,6 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/broetjim/", // needed for deployment to GitHub pages
   plugins: [react(), tailwindcss()],
 });
